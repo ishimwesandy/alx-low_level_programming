@@ -3,7 +3,13 @@
 #include <stdio.h>
 
 
-/* betty style doc for function main goes there */
+/**
+ * main - Determines if a number is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
+
+
 int main(void)
 {
 	int n;
@@ -12,15 +18,16 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	
 	if(n>0){
-	    printf("%d",n);
-	    printf(" is positive");
+	
+	
+	printf("%d is positive\n", n);
+	
 	}else if(n==0){
-	     printf("%d",n);
-	      printf(" is zero");
-	}
-	else{
-	     printf("%d",n);
-	      printf(" is negative");
+printf("%d is zero\n", n);
+	}else {
+	printf("%d is negative\n", n);
+
+	
 	}
 	
 	
