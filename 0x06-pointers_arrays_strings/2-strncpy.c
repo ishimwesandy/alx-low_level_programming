@@ -1,23 +1,31 @@
 #include "main.h"
 /**
- * _strcmp -  function that compare string values
- * @str1: input value
- * @str2: input value
+ * _strncat - function that concatenate two strings
+ * using at most num bytes from start
+ * @end: input value
+ * @start: input value
+ * @num: input value
  *
- * Return: str1[i] - str2[i]
+ * Return: end
  */
-int _strcmp(char *str1, char *str2)
+char *_strncat(char *end, char *start, int num)
 {
 	int i;
+	int j;
 
 	i = 0;
-	while (str1[i] != '\0' && str2[i] != '\0')
+	while (end[i] != '\0')
 	{
-		if (str1[i] != str2[i])
-		{
-			return (str1[i] - str2[i]);
-		}
 		i++;
 	}
-	return (0);
+	j = 0;
+	while (j < num && start[j] != '\0')
+	{
+	end[i] = start[j];
+	i++;
+	j++;
+	}
+	end[i] = '\0';
+	return (end);
 }
+
