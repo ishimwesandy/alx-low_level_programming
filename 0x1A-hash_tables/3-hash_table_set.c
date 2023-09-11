@@ -5,8 +5,7 @@
  * @ht: pointer to hash table.
  * @key:  add the element to key.
  * @value: add the element to value.
- * n@w: new node
- *
+ * Return: return 0 or 1
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)

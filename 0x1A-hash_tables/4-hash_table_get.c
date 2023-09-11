@@ -2,8 +2,8 @@
 /**
  * hash_table_get - function that  retrieve value associeted with specific key
  * @ht: pointer of hashed table
- * @key: retrive value to the key 
- *
+ * @key: retrive value to the key
+ * Return: return value if is matched
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
