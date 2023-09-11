@@ -3,6 +3,7 @@
 /**
  * hash_table_create - function that  creates  hashed table
  * @size: size of the array table
+ *Return: it will return NULL when there is error otherwise print value
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
